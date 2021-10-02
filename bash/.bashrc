@@ -122,9 +122,9 @@ export NVM_DIR="$HOME/.nvm"
 
 ##-----------------------------------------------------
 ## synth-shell-greeter.sh
-if [ -f /home/jc/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
-	source /home/jc/.config/synth-shell/synth-shell-greeter.sh
-fi
+#if [ -f /home/jc/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
+#	source /home/jc/.config/synth-shell/synth-shell-greeter.sh
+#fi
 
 ##-----------------------------------------------------
 ## synth-shell-prompt.sh
