@@ -1,7 +1,24 @@
 {
   "name": "KBD67MKIIRGBV3",
   "vendorProductId": 1262621222,
-  "macros": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+  "macros": [
+    "{KC_RALT,KC_Q}",
+    "{KC_RALT,KC_P}",
+    "{KC_RALT,KC_Y}",
+    "{KC_RALT,KC_S}",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
   "layers": [
     [
       "KC_ESC",
@@ -190,7 +207,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "MACRO00",
-      "KC_TRNS",
+      "MACRO03",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
@@ -203,7 +220,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_LSFT",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
