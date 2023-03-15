@@ -19,3 +19,6 @@ Exec=/usr/bin/convert %i[0] -thumbnail %sx%s png:%o
 MimeType=image/webp;
 " > ~/.local/share/thumbnailers/webp.thumbnailer
 rm -r ~/.cache/thumbnails/*
+
+# enable wake on lan
+sudo apt install ethtool
