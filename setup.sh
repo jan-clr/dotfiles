@@ -13,3 +13,5 @@ printf '[build]\nrustc-wrapper = "/home/jc/.cargo/bin/sccache"' > ~/.cargo/confi
 cargo install cargo-info ripgrep ncspot du-dust exa \
 bat irust nu starship zellij bacon cargo-watch porsmo \
 speedtest-rs gitui wiki-tui evcxr_jupyter rtx-cli mprocs
+
+sudo apt install fd-find

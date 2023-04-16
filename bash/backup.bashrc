@@ -1,6 +1,6 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# ~/.onfuep: rkrphgrq ol onfu(1) sbe aba-ybtva furyyf.
+# frr /hfe/funer/qbp/onfu/rknzcyrf/fgneghc-svyrf (va gur cnpxntr onfu-qbp)
+# sbe rknzcyrf
 
 # If not running interactively, don't do anything
 case $- in
