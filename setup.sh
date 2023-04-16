@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install cmake
+sudo apt install cmake librust-alsa-sys-dev
 
 curl https://sh.rustup.rs | sh
 
@@ -18,4 +18,5 @@ printf '[build]\nrustc-wrapper = "%s"' $(which sccache) > ~/.cargo/config.toml
 cargo install cargo-info ripgrep ncspot du-dust exa \
 bat irust nu starship zellij bacon cargo-watch porsmo \
 speedtest-rs gitui wiki-tui evcxr_jupyter rtx-cli mprocs alacritty
+
 sudo apt install fd-find
