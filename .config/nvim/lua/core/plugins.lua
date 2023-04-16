@@ -21,7 +21,10 @@ local plugins = {
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
-  'bluz71/vim-nightfly-colors',
+  -- Themes
+  --'bluz71/vim-nightfly-colors',
+  'navarasu/onedark.nvim',
+  --
   'vim-test/vim-test',
   'lewis6991/gitsigns.nvim',
   'tpope/vim-fugitive',
@@ -40,7 +43,8 @@ local plugins = {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
-  }
+  },
+  {'akinsho/toggleterm.nvim', version = "*", config = true}
 }
 
 local opts = {}
