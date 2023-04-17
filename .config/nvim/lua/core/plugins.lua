@@ -62,9 +62,9 @@ local plugins = {
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   },
-  {'akinsho/toggleterm.nvim', version = "*", config = true}
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
   -- LaTeX
-
+  'lervag/vimtex',
 }
 
 local opts = {}
