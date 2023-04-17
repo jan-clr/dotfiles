@@ -6,6 +6,8 @@ sudo apt upgrade
 # install fira code font
 sudo apt install fonts-firacode
 
+
+
 # gnome related installs
 sudo apt install gnome-tweaks
 sudo apt install libqt5svg5 qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-controls-plugin

@@ -12,23 +12,41 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+  -- Core functionality
+  'nvim-tree/nvim-tree.lua',
+  'nvim-tree/nvim-web-devicons',
+  'nvim-lualine/lualine.nvim',
+  'nvim-treesitter/nvim-treesitter',
+  {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup({
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      })
+    end,
+  },
+  -- Themes
   'ellisonleao/gruvbox.nvim',
   {
     'dracula/vim',
     lazy = false,
   },
-  'nvim-tree/nvim-tree.lua',
-  'nvim-tree/nvim-web-devicons',
-  'nvim-lualine/lualine.nvim',
-  'nvim-treesitter/nvim-treesitter',
-  -- Themes
   --'bluz71/vim-nightfly-colors',
   'navarasu/onedark.nvim',
   --
   'vim-test/vim-test',
+  -- Git
   'lewis6991/gitsigns.nvim',
   'tpope/vim-fugitive',
   -- completion
+  {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  },
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
   'L3MON4D3/LuaSnip',
@@ -45,6 +63,8 @@ local plugins = {
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   },
   {'akinsho/toggleterm.nvim', version = "*", config = true}
+  -- LaTeX
+
 }
 
 local opts = {}
