@@ -19,3 +19,5 @@ vim.cmd [[ set noswapfile ]]
 --Line numbers
 vim.wo.number = true
 vim.wo.relativenumber = true
+
+vim.wo.breakindent = true
