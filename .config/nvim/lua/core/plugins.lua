@@ -29,6 +29,7 @@ local plugins = {
       })
     end,
   },
+  {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
   -- Themes
   'ellisonleao/gruvbox.nvim',
   {
@@ -37,6 +38,7 @@ local plugins = {
   },
   --'bluz71/vim-nightfly-colors',
   'navarasu/onedark.nvim',
+  'xiyaowong/transparent.nvim', -- transparent Text
   --
   'vim-test/vim-test',
   -- Git

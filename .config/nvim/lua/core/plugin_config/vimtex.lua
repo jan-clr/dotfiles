@@ -10,5 +10,5 @@ vim.cmd [[
     \ ],
     \} 
 
-    let g:vimtex
+    let g:vimtex_view_method = 'zathura'
 ]]

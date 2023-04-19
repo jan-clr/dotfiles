@@ -42,5 +42,34 @@ s({trig = '([^%a])ee', regTrig = true, wordTrig = false, snippetType = "autosnip
   )
 ),
 
+s({trig = '([^%a])ddiv', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\nabla\\cdot<>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])grd', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\nabla<>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])crl', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\nabla\\times<>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
 
 }
