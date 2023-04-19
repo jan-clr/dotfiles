@@ -14,7 +14,7 @@ local get_visual = helpers.get_visual
 
 return {
 
-s({trig = "tii", dscr = "Expands 'tii' into LaTeX's textit{} command."},
+s({trig = "tii", dscr = "Expands 'tii' into LaTeX's textit{} command.", snippetType = "autosnippet"},
   fmta("\\textit{<>}",
     {
       d(1, get_visual),
@@ -22,7 +22,7 @@ s({trig = "tii", dscr = "Expands 'tii' into LaTeX's textit{} command."},
   )
 ),
 
-s({trig = "([^%a])mm", wordTrig = false, regTrig = true},
+s({trig = "([^%a])mm", wordTrig = false, regTrig = true, snippetType = "autosnippet"},
   fmta(
     "<>$<>$",
     {
@@ -32,7 +32,7 @@ s({trig = "([^%a])mm", wordTrig = false, regTrig = true},
   )
 ),
 
-s({trig = '([^%a])ee', regTrig = true, wordTrig = false},
+s({trig = '([^%a])ee', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
     "<>e^{<>}",
     {

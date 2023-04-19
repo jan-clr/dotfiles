@@ -9,4 +9,6 @@ vim.cmd [[
     \   '-interaction=nonstopmode',
     \ ],
     \} 
+
+    let g:vimtex
 ]]
