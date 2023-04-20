@@ -6,3 +6,4 @@ git sparse-checkout add patched-fonts/FiraCode
 ./install.sh JetBrainsMono
 ./install.sh FiraCode
 
+
