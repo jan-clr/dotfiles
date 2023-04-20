@@ -42,7 +42,17 @@ s({trig = '([^%a])ee', regTrig = true, wordTrig = false, snippetType = "autosnip
   )
 ),
 
-s({trig = '([^%a])ddv', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+s({trig = '([^%a])nbl', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\nabla<>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])div', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
     "<>\\div<>",
     {
@@ -75,6 +85,36 @@ s({trig = '([^%a])crl', regTrig = true, wordTrig = false, snippetType = "autosni
 s({trig = '([^%a])vb', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
     "<>\\vb{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])int3', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\int_{V}\\dd[3]{x} <>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])int2', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\int_{S}\\dd[2]{x} <>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])intpv', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\int_{\\partial V}\\dd[2]{x} <>",
     {
       f( function(_, snip) return snip.captures[1] end ),
       d(1, get_visual)
