@@ -42,9 +42,9 @@ s({trig = '([^%a])ee', regTrig = true, wordTrig = false, snippetType = "autosnip
   )
 ),
 
-s({trig = '([^%a])ddiv', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+s({trig = '([^%a])ddv', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
-    "<>\\nabla\\cdot<>",
+    "<>\\div<>",
     {
       f( function(_, snip) return snip.captures[1] end ),
       d(1, get_visual)
@@ -54,7 +54,7 @@ s({trig = '([^%a])ddiv', regTrig = true, wordTrig = false, snippetType = "autosn
 
 s({trig = '([^%a])grd', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
-    "<>\\nabla<>",
+    "<>\\grad<>",
     {
       f( function(_, snip) return snip.captures[1] end ),
       d(1, get_visual)
@@ -64,7 +64,17 @@ s({trig = '([^%a])grd', regTrig = true, wordTrig = false, snippetType = "autosni
 
 s({trig = '([^%a])crl', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
   fmta(
-    "<>\\nabla\\times<>",
+    "<>\\curl<>",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual)
+    }
+  )
+),
+
+s({trig = '([^%a])vb', regTrig = true, wordTrig = false, snippetType = "autosnippet"},
+  fmta(
+    "<>\\vb{<>}",
     {
       f( function(_, snip) return snip.captures[1] end ),
       d(1, get_visual)
