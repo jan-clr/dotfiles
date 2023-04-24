@@ -18,7 +18,9 @@ vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', { silent = true })
 vim.keymap.set({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>", { silent = true })
 vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { silent = true })
 
-require("lspconfig").lua_ls.setup {
+local lspconfig = require('lspconfig')
+
+lspconfig.lua_ls.setup {
   capabilities = capabilities,
   settings = {
     Lua = {
@@ -35,10 +37,22 @@ require("lspconfig").lua_ls.setup {
   }
 }
 
-require("lspconfig").solargraph.setup {
+lspconfig.solargraph.setup {
   capabilities = capabilities,
 }
 
-require("lspconfig").pyright.setup {
+lspconfig.pyright.setup {
+  capabilities = capabilities,
+}
+
+lspconfig.intelephense.setup {
+  capabilities = capabilities,
+}
+
+lspconfig.tsserver.setup {
+  capabilities = capabilities,
+}
+
+lspconfig.volar.setup {
   capabilities = capabilities,
 }
