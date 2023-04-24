@@ -30,15 +30,7 @@ local plugins = {
     end,
   },
   {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
-  {
   'rmagatti/auto-session',
-  config = function()
-    require("auto-session").setup {
-      log_level = "error",
-      auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
-    }
-  end
-  },
   -- Themes
   'ellisonleao/gruvbox.nvim',
   {
@@ -76,9 +68,6 @@ local plugins = {
   {
       'rmagatti/session-lens',
       requires = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
-      config = function()
-          require('session-lens').setup{--[[your custom config--]]}
-      end
   },
   {'akinsho/toggleterm.nvim', version = "*", config = true},
   -- LaTeX

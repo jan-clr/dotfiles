@@ -23,3 +23,7 @@ vim.wo.relativenumber = true
 vim.wo.breakindent = true
 
 vim.opt.termguicolors = true
+
+vim.opt.fillchars = {
+    vert = ' '
+}
