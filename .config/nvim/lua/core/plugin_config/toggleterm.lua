@@ -1,7 +1,7 @@
 require("toggleterm").setup{
     -- size can be a number or function which is passed the current terminal
   size = 20,
-  open_mapping = [[<leader>ot]],
+  open_mapping = [[<A-t>]],
   hide_numbers = true,
   shade_filetypes = {},
   shade_terminals = true,

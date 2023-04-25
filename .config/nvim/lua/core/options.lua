@@ -21,6 +21,9 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.wo.breakindent = true
+vim.wo.breakindentopt = 'sbr,shift:3'
+
+vim.opt.showbreak = '⤷'
 
 vim.opt.termguicolors = true
 
