@@ -28,5 +28,6 @@ vim.opt.showbreak = '⤷'
 vim.opt.termguicolors = true
 
 vim.opt.fillchars = {
-    vert = ' '
+    vert = ' ',
+    eob = ' '
 }

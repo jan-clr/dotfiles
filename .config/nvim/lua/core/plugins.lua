@@ -45,7 +45,7 @@ local plugins = {
   -- Git
   'lewis6991/gitsigns.nvim',
   'tpope/vim-fugitive',
-  -- completion
+  -- completion and syntax highlighting
   {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
@@ -69,6 +69,7 @@ local plugins = {
       'rmagatti/session-lens',
       requires = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
   },
+  "fladson/vim-kitty",
   {'akinsho/toggleterm.nvim', version = "*", config = true},
   -- LaTeX
   'lervag/vimtex',
