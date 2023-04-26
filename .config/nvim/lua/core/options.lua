@@ -31,3 +31,5 @@ vim.opt.fillchars = {
     vert = ' ',
     eob = ' '
 }
+
+vim.opt.scrolloff = 10
