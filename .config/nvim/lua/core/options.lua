@@ -33,3 +33,5 @@ vim.opt.fillchars = {
 }
 
 vim.opt.scrolloff = 10
+
+vim.opt.conceallevel = 2

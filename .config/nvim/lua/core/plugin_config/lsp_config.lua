@@ -140,3 +140,7 @@ lspconfig.tsserver.setup {
 lspconfig.volar.setup {
   capabilities = capabilities,
 }
+
+lspconfig.texlab.setup {
+  capabilities = capabilities,
+}
