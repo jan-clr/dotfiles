@@ -29,6 +29,10 @@ local plugins = {
       })
     end,
   },
+  {
+      "folke/trouble.nvim",
+      dependencies = "nvim-tree/nvim-web-devicons",
+  },
   {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
   'rmagatti/auto-session',
   -- Themes
@@ -71,6 +75,12 @@ local plugins = {
   },
   "fladson/vim-kitty",
   {'akinsho/toggleterm.nvim', version = "*", config = true},
+  {
+      'windwp/nvim-ts-autotag',
+      config = function ()
+        require('nvim-ts-autotag').setup()
+      end
+  },
   -- LaTeX
   'lervag/vimtex',
 }
