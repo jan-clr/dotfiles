@@ -144,3 +144,7 @@ lspconfig.volar.setup {
 lspconfig.texlab.setup {
   capabilities = capabilities,
 }
+
+lspconfig.rust_analyzer.setup {
+    capabilities = capabilities,
+}

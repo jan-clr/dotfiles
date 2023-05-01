@@ -5,7 +5,7 @@ api.nvim_create_autocmd(
     "BufEnter",
     {
         pattern = {"*.pdf"},
-        command = [[silent! execute "!zathura '%' &" | bdelete %]]
+        command = [[silent! execute "!echo \"(zathura '%') &\" | bash" | bdelete %]]
     }
 )
 
