@@ -35,6 +35,7 @@ local plugins = {
   },
   {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
   'rmagatti/auto-session',
+  'Aasim-A/scrollEOF.nvim',
   -- Themes
   'ellisonleao/gruvbox.nvim',
   {
