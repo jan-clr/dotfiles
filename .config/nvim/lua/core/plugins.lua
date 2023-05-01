@@ -43,6 +43,7 @@ local plugins = {
   },
   --'bluz71/vim-nightfly-colors',
   'navarasu/onedark.nvim',
+  { "catppuccin/nvim", name = "catppuccin" },
   'xiyaowong/transparent.nvim', -- transparent Text
   --
   'vim-test/vim-test',
