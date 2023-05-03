@@ -33,6 +33,7 @@ local plugins = {
       "folke/trouble.nvim",
       dependencies = "nvim-tree/nvim-web-devicons",
   },
+  "folke/zen-mode.nvim",
   {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
   'rmagatti/auto-session',
   'Aasim-A/scrollEOF.nvim',
