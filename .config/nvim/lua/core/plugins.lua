@@ -18,6 +18,11 @@ local plugins = {
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
   {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    after = "nvim-treesitter",
+    requires = "nvim-treesitter/nvim-treesitter",
+  },
+  {
     "folke/which-key.nvim",
     config = function()
       vim.o.timeout = true
