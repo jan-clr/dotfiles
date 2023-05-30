@@ -19,3 +19,4 @@ require("core.plugin_config.trouble")
 require("core.plugin_config.scrolleof")
 require("core.plugin_config.zen_mode")
 require("core.plugin_config.hop")
+

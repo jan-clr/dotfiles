@@ -72,6 +72,11 @@ local plugins = {
   },
   "rafamadriz/friendly-snippets",
   "github/copilot.vim",
+  --{
+  --  "zbirenbaum/copilot.lua",
+  --  cmd = "Copilot",
+  --  event = "InsertEnter",
+  --},
   "williamboman/mason.nvim",
   "neovim/nvim-lspconfig",
   "williamboman/mason-lspconfig.nvim",
