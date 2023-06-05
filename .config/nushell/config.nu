@@ -651,13 +651,11 @@ let-env config = {
   ]
 }
 
-alias ctrlc = xclip -sel clip
-alias mthdd = (sudo mkdir -p /media/jc/Volume | sudo mount /dev/sda1 /media/jc/Volume)
-alias pr0n = nautilus "/media/jc/Volume/Documents/DxO OpticsPro 11 logs"
-alias alacritty-conf = vim .config/alacritty/alacritty.yml
-
 # shim rtx paths while nu not supported
 let-env PATH = ($env.PATH | append ($env.HOME + '/.local/share/rtx/shims'))
 
 # Starship prompt
 source ~/.cache/starship/init.nu
+
+# Aliases
+source alias.nu

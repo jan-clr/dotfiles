@@ -1,3 +1,4 @@
 lazy-lock.json
 .config/nushell/history.txt
 .config/nushell/*.nu~
+.config/nushell/local_env.nu    
