@@ -17,7 +17,7 @@ require("toggleterm").setup{
   persist_size = true,
   direction = "vertical",
   close_on_exit = true,
-  shell = vim.o.shell,
+  shell = 'nu',
   float_opts = {
     border = "curved",
     winblend = 0,
