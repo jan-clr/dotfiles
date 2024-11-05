@@ -79,3 +79,5 @@ $env.NU_PLUGIN_DIRS = [
 
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
+let mise_path = $nu.default-config-dir | path join mise.nu
+^mise activate nu | save $mise_path --force

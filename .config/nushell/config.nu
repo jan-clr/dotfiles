@@ -764,3 +764,11 @@ $env.config = {
 }
 
 use ~/.cache/starship/init.nu
+
+# Aliases
+source ~/.config/nushell/alias.nu
+
+# shim rtx paths while nu not supported
+#$env.PATH = ($env.PATH | append ($env.HOME + '/.local/share/rtx/shims'))
+
+use ($nu.default-config-dir | path join mise.nu)

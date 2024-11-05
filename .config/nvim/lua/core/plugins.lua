@@ -43,7 +43,7 @@ local plugins = {
     dependencies = { "nvim-lua/plenary.nvim" },
   },
   "folke/zen-mode.nvim",
-  {'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
+  {'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
   'rmagatti/auto-session',
   'Aasim-A/scrollEOF.nvim',
   {
@@ -71,6 +71,13 @@ local plugins = {
     config = function() require("nvim-autopairs").setup {} end
   },
   {
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp"
+  },
+  {
       'hrsh7th/nvim-cmp',
       dependencies = {'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip', 'FelipeLema/cmp-async-path'}
   },
@@ -82,12 +89,11 @@ local plugins = {
   --  event = "InsertEnter",
   --},
   "williamboman/mason.nvim",
-  "neovim/nvim-lspconfig",
   "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
   "glepnir/lspsaga.nvim",
   {
 	  'nvim-telescope/telescope.nvim',
-	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   },
   {

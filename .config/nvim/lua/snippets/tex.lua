@@ -151,6 +151,28 @@ s({trig = '([^%a])uvec', regTrig = true, wordTrig = false, snippetType = "autosn
   )
 ),
 
+s({trig = '([^%a])dv', regTrig = true, wordTrig = false, snippetType = "autosnippet", dscr = "derivative - Expands to the \\dv command of the physics package."},
+  fmta(
+  "<>\\dv{<>}{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual),
+      i(2)
+    }
+  )
+),
+
+s({trig = '([^%a])pdv', regTrig = true, wordTrig = false, snippetType = "autosnippet", dscr = "derivative - Expands to the \\dv command of the physics package."},
+  fmta(
+  "<>\\pdv{<>}{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      d(1, get_visual),
+      i(2)
+    }
+  )
+),
+
 ---------------------------
 ----- Environments
 ---------------------------
