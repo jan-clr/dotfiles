@@ -1,6 +1,6 @@
 require('nvim-treesitter.configs').setup({
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "rust", "ruby", "vim" },
+  ensure_installed = { "c", "lua", "rust", "ruby", "vim", "markdown" },
   ignore_install = {'latex'},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -8,7 +8,7 @@ require('nvim-treesitter.configs').setup({
   auto_install = true,
   highlight = {
     enable = true,
-    disable = {'latex'},
+    disable = {'latex', 'markdown', 'markdown_inline'},
   },
   indent = { enable = true, disable = { 'python' } },
   incremental_selection = {
