@@ -17,6 +17,6 @@ printf '[build]\nrustc-wrapper = "%s"' $(which sccache) > ~/.cargo/config.toml
 
 cargo install cargo-info ripgrep ncspot du-dust exa \
 bat irust nu starship zellij bacon cargo-watch porsmo \
-speedtest-rs gitui wiki-tui evcxr_jupyter rtx-cli mprocs alacritty
+speedtest-rs gitui wiki-tui evcxr_jupyter rtx-cli mprocs alacritty bob-nvim
 
 sudo apt install fd-find
